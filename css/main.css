@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+* {
+  box-sizing: border-box;
+  transition: 0.3s; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Young Serif", "Outfit"; }
+
+p {
+  font-family: "Outfit", sans-serif; }
+
+ul {
+  font-family: "Outfit", sans-serif; }
+
+h2 {
+  color: #854632; }
+
+main {
+  width: 90%;
+  margin: 50px auto; }
+  main .image img {
+    max-width: 100%;
+    border-radius: 8px; }
+  main .heading p {
+    color: #5f574e; }
+  main .preparation {
+    background-color: #fff5fa;
+    padding: 20px 50px;
+    border-radius: 8px; }
+    main .preparation h3 {
+      margin: 0 0 10px;
+      color: #7b284f; }
+    main .preparation ul {
+      margin: 0;
+      padding: 0;
+      list-style-position: inside; }
+      main .preparation ul li {
+        color: #5f574e; }
+  main .ingredients {
+    border-bottom: 1px solid #e4ded8; }
+    main .ingredients ul {
+      margin: 0;
+      padding: 0;
+      list-style-position: inside; }
+      main .ingredients ul li {
+        padding-bottom: 10px; }
+        main .ingredients ul li:nth-of-type(5) {
+          padding-bottom: 30px; }
+  main .instructions {
+    border-bottom: 1px solid #e4ded8; }
+    main .instructions ul {
+      list-style: none;
+      margin: 0; }
+      main .instructions ul li {
+        counter-increment: li;
+        position: relative;
+        padding-bottom: 10px; }
+        main .instructions ul li:before {
+          content: counter(li) ".";
+          display: inline-block;
+          font-size: 18px;
+          margin-right: 5px;
+          font-weight: bold;
+          color: #854632;
+          position: absolute;
+          left: -30px;
+          top: 0; }
+        main .instructions ul li:nth-of-type(6) {
+          padding-bottom: 30px; }
+        main .instructions ul li span {
+          font-weight: bold; }
+  main .nutrition p {
+    color: #5f574e; }
+  main .nutrition table {
+    width: 100%;
+    padding: 20px; }
+    main .nutrition table tr td {
+      padding: 10px;
+      border-bottom: 1px solid #e4ded8; }
+      main .nutrition table tr td:last-child {
+        color: #854632; }
+
+/*# sourceMappingURL=main.css.map */

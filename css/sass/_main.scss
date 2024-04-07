@@ -1,0 +1,128 @@
+// Outfit
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+// Young Serif
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+* {
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Young Serif", "Outfit";
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+}
+
+ul {
+  font-family: "Outfit", sans-serif;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+main {
+  width: 90%;
+  margin: 50px auto;
+  .image {
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  }
+  .heading {
+    h1 {
+    }
+    p {
+      color: hsl(30, 10%, 34%);
+    }
+  }
+  .preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px 50px;
+    border-radius: 8px;
+    h3 {
+      margin: 0 0 10px;
+      color: hsl(332, 51%, 32%);
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-position: inside;
+      li {
+        color: hsl(30, 10%, 34%);
+      }
+    }
+  }
+  .ingredients {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    h2 {
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-position: inside;
+      li {
+        padding-bottom: 10px;
+        &:nth-of-type(5) {
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+  .instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    h2 {
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        counter-increment: li;
+        position: relative;
+        padding-bottom: 10px;
+        &:before {
+          content: counter(li) ".";
+          display: inline-block;
+          font-size: 18px;
+          margin-right: 5px;
+          font-weight: bold;
+          color: hsl(14, 45%, 36%);
+          position: absolute;
+          left: -30px;
+          top: 0;
+        }
+        &:nth-of-type(6) {
+          padding-bottom: 30px;
+        }
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .nutrition {
+    h2 {
+    }
+    p {
+      color: hsl(30, 10%, 34%);
+    }
+    table {
+      width: 100%;
+      padding: 20px;
+      tr {
+        td {
+          padding: 10px;
+          border-bottom: 1px solid hsl(30, 18%, 87%);
+          &:last-child {
+            color: hsl(14, 45%, 36%);
+          }
+        }
+      }
+    }
+  }
+}
