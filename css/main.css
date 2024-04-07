@@ -7,6 +7,10 @@
 body {
   margin: 0;
   padding: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3e6d8;
   font-family: "Young Serif", "Outfit"; }
 
 p {
@@ -19,8 +23,11 @@ h2 {
   color: #854632; }
 
 main {
-  width: 90%;
-  margin: 50px auto; }
+  max-width: 800px;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px; }
   main .image img {
     max-width: 100%;
     border-radius: 8px; }

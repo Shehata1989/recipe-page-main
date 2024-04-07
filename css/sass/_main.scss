@@ -10,6 +10,10 @@
 body {
   margin: 0;
   padding: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 54%, 90%);
   font-family: "Young Serif", "Outfit";
 }
 
@@ -26,8 +30,11 @@ h2 {
 }
 
 main {
-  width: 90%;
-  margin: 50px auto;
+  max-width: 800px;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
   .image {
     img {
       max-width: 100%;
